@@ -59,10 +59,8 @@
 #     'Eagerness': [{'emotion': 'joy', 'connnectedness': 0.25}],
 #     'Hope': [{'emotion': 'joy', 'connnectedness': 0.25}],
 #     'Rapture': [{'emotion': 'joy', 'connnectedness': 0.25}],
-
 #     'Amazement': [{'emotion': 'surprise', 'connnectedness': 0.25}],
 #     'Astonishment': [{'emotion': 'surprise', 'connnectedness': 0.25}],
-
 # }
 
 EMOTION_DICT = {
@@ -113,9 +111,14 @@ EMOTION_DICT = {
 EMOTION_TREE = {}
 
 for l1 in EMOTION_DICT:
-    EMOTION_TREE[l1]={}
+    EMOTION_TREE[l1]={
+        'emotion': l1,
+        'connnectedness': 1
+    }
     for l2 in EMOTION_DICT[l1]:
-        EMOTION_TREE[l2]={}
+        EMOTION_TREE[l2]={
+
+        }
         for l3 in EMOTION_DICT[l1][l2]:
             EMOTION_TREE[l3]={}
 
