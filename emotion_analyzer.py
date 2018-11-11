@@ -107,19 +107,3 @@ EMOTION_DICT = {
     'Nervousness':	['Anxiety', 'Suspense', 'Uneasiness', 'Apprehension', 'Worry', 'Distress', 'Dread']
 }
 }
-
-EMOTION_TREE = {}
-
-for l1 in EMOTION_DICT:
-    EMOTION_TREE[l1]={
-        'emotion': l1,
-        'connnectedness': 1
-    }
-    for l2 in EMOTION_DICT[l1]:
-        EMOTION_TREE[l2]={
-
-        }
-        for l3 in EMOTION_DICT[l1][l2]:
-            EMOTION_TREE[l3]={}
-
-print EMOTION_TREE
